@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MembersOnly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+<style>
+    body{
+        overflow: hidden;
+    }
+</style>
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <div class="uk-position-relative">
+        <img src="images/light.jpg" alt="">
+        <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="/">Home</a></li>
+                        <li><a href="/apply-for-account">Request Account</a></li>
+                        <li>
+                            <a href="/creator">Contact</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">About</a></li>
+                                    <li class="uk-nav-header">Usefull Links</li>
+                                    <li><a href="https://www.youtube.com/user/simonz350">Leon Lush</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="https://www.youtube.com/user/simonz350">Also Leon Lush</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <br>
+    <br>
+        <form action="/validate-data" method="POST" style="position: relative; text-align: center; bottom: -150px; overflow: hidden;">
+
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                    <input class="uk-input uk-width-large" type="text" name="name">
+                </div>
+            </div>
+        
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                    <input class="uk-input uk-width-large" type="password" name="password">
+                </div>
+            </div>
+            
+            <button class="uk-button uk-button-default uk-width-large">Submit</button>
+        </form>
+        <script>
+            
+        </script>
+</body>
+</html>
